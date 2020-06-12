@@ -4,6 +4,11 @@ class Form {
     this.input = createInput("Name");
     this.button = createButton('Play');
     this.greeting = createElement('h2');
+    this.qusion1 = createElement('h3',"Q1 Will you give money in charaty?");
+    this.radio1 = createRadio('h3');
+    this.radio1.option('yes');
+    this.radio1.option('No');
+    
   }
   hide(){
     this.greeting.hide();
@@ -18,6 +23,8 @@ class Form {
 
     this.input.position(130, 160);
     this.button.position(250, 200);
+    this.qusion1.position(400,200);
+    this.radio1.position(330,250);
 
     this.button.mousePressed(()=>{
       this.input.hide();
