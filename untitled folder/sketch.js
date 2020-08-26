@@ -10,7 +10,6 @@ var form, player, game;
 
 
 function setup(){
-  canvas = createCanvas(displayWidth-20,displayHeight-100);
   database = firebase.database();
   game = new Game();
   game.getState();
@@ -19,11 +18,11 @@ function setup(){
 
 
 function draw(){
-  if(playerCount === 4){
+  /*if(playerCount === 4){
     game.update(1);
   }
   if(gameState === 1){
     clear();
     game.play();
-  }
+  }*/
 }

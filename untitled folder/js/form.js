@@ -2,12 +2,13 @@ class Form {
 
   constructor() {
     this.input = createInput("Name");
-    this.button = createButton('Play');
+    this.button = createButton('Start');
     this.greeting = createElement('h2');
     this.qusion1 = createElement('h3',"Q1 Will you give money in charaty?");
     this.radio1 = createRadio('h3');
     this.radio1.option('yes');
     this.radio1.option('No');
+    this.sumbit=createButton("sumbit");
     
   }
   hide(){
@@ -21,10 +22,11 @@ class Form {
     title.html("Q & A");
     title.position(130, 0);
 
-    this.input.position(130, 160);
-    this.button.position(250, 200);
-    this.qusion1.position(400,200);
-    this.radio1.position(330,250);
+    this.input.position(20, 160);
+    this.button.position(20, 200);
+    this.qusion1.position(20,300);
+    this.radio1.position(20,350);
+    this.sumbit.position(20,400);
 
     this.button.mousePressed(()=>{
       this.input.hide();
